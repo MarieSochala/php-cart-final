@@ -12,6 +12,8 @@ class HomeController extends Controller {
 	}	
 
 	public function getLogout(Application $app){
+		session_destroy();
+		return $app->redirect('/');
 	}
 
 }
