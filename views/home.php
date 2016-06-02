@@ -7,17 +7,17 @@
 		<!-- boucle des produits ui card -->
 		<?php foreach ($products as $product) : ?>
  			<div class="ui card">
- 				<div class="visuel">
+ 				<div class="image">
  					<img src="<?=$product->picture?>">
  				</div>
- 				<div class="description">
- 					<div class="content">
+ 				<div class="content">
+ 					<div class="header">
  						<?php=$product['name']?>
  					</div>
  				</div>
- 				<div class="achat">
+ 				<div class="extra content">
  					<form method="POST" action="/cart/add" name="commande">
- 						<input type="hidden" value="<?=$product->id?>" name="id"/>
+ 						<input type="hidden" value="<?php=$product->id?>" name="id"/>
  						<button class="ui button" type="submit">Acheter</button>
  					</form>
  				</div>
