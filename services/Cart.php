@@ -19,7 +19,7 @@ class Cart {
 	}
 
 	public function count(){
-		
+		return count(self::get());
 	}
 	public function total(){
 	}
