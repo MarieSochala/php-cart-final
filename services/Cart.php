@@ -22,5 +22,11 @@ class Cart {
 		return count(self::get());
 	}
 	public function total(){
+		$products=self::get();
+		$prix= array();
+		foreach ($products as $product) {
+			array_push($prix, $product->price);
+		}
+		return array_sum($prix);
 	}
 }
