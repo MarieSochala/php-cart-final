@@ -12,7 +12,10 @@
  				</div>
  				<div class="content">
  					<div class="header">
- 						<?php=$product['name']?>
+ 						<?=$product['name']?>
+ 						<span class="right floated">
+ 						<?=$product['price']?>&euro;
+ 					</span>
  					</div>
  				</div>
  				<div class="extra content">
