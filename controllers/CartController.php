@@ -19,4 +19,9 @@ class CartController extends Controller {
 		return $app->redirect('/');
 	}	
 
+	public function getFinalCom(Request $request, Application $app){
+		return view('cart/finalcom', ['products' => Cart::get()]);
+	}
+
+	
 }
