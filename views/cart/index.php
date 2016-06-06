@@ -22,19 +22,16 @@
 					</tr>
 				</thead>
 				<!-- une boucle ! -->
-				<?php foreach($products as $product): ?>
 				<tbody>
 					<tr>
-						<td><?=$product->name?></td>
-						<td><img src="<?=$product->picture?>" width="50px" height="50px"></td>
-						<td><?=$product->price?></td>
+						<?php foreach($products as $product): ?>
+							<td><img src="<?=$product->picture?>" width="70px" height="70px"></td>
+							<td><?=$product->name?></td>
+							<td><?=$product->price?> &euro;</td>
 					</tr>
 				</tbody>
-			<?php endforeach; ?>
-
+				<?php endforeach;?>
  			</table>
 		</div>
 	</div>
-
-
 </div>

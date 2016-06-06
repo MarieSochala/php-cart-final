@@ -8,7 +8,7 @@ use Cart;
 class CartController extends Controller {
 
 	public function getIndex(Request $request, Application $app){
-		return view('cart/index', ['commandes' => 1]);
+		return view('cart/index', ['products' => Cart::get()]);
 	}	
 
 	public function postAdd(Request $request, Application $app){
