@@ -7,6 +7,7 @@
 				<h4 class="item">Montant total : <?=Cart::total()?> &euro;</h4>
 				<h4 classs="item">Nombre de produits : <?=Cart::count()?> </h4>
 			</div> </br>
+			<h1>Veuillez remplir ce formulaire</h1> </br>
 			<form method="POST" action="/cart/checkout" class="ui form" name="subs">
 				<div class="two fields">
 					<div class="field">
@@ -31,7 +32,10 @@
 	  				<input type="text" name="phone" placeholder="Telephone" maxlength="10">
 	  			</div> </br>
 	  			<button class="ui button" type="submit">Valider ma commande</button>
-			</form>
+			</form></br>
+			<div class="item">
+                <a href="/cart/validate" class="ui button">Annuler ma commande</a>
+            </div>
 		</div>
 	</div>
 </div>

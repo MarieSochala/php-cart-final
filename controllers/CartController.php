@@ -27,4 +27,8 @@ class CartController extends Controller {
 		return view('cart/commande', ['products' => Cart::get()]);
 	}
 
+	public function getVal(Request $request, Application $app){
+		return view('cart/validate', ['products' => Cart::get()]);
+	}
+
 }

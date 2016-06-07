@@ -21,5 +21,6 @@ $app->get('/cart', 'App\\Controllers\\CartController::getIndex');
 $app->post('/cart/add', 'App\\Controllers\\CartController::postAdd');  
 $app->get('/cart/checkout', 'App\\Controllers\\CartController::getFinalCom');
 $app->post('/cart/checkout', 'App\\Controllers\\CartController::postCom');
+$app->get('cart/validate', 'App\\Controllers\\CartController::getVal');
 
 $app->run(); 
