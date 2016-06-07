@@ -23,5 +23,8 @@ class CartController extends Controller {
 		return view('cart/finalcom', ['products' => Cart::get()]);
 	}
 
-	
+	public function postCom(Request $request, Application $app){
+		return view('cart/commande', ['products' => Cart::get()]);
+	}
+
 }
